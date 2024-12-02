@@ -23,7 +23,7 @@ const CoffeDetails = ({ coffeeDetails, removedCoffee, setRemovedCoffee }) => {
         }).then(async (result) => {
             if (result.isConfirmed) {
 
-                const res = await fetch(`http://localhost:5000/coffee/${_id}`, {
+                const res = await fetch(`https://coffe-store-server-sooty-gamma.vercel.app/coffee/${_id}`, {
                     method: 'DELETE'
                 })
                 const data = await res.json();

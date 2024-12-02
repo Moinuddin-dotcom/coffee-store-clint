@@ -24,7 +24,7 @@ const UpdateCoffee = () => {
         console.log(updatedCoffee)
         // e.target.reset()
         // Send data to server
-        const res = await fetch(`http://localhost:5000/coffee/${_id}`, {
+        const res = await fetch(`https://coffe-store-server-sooty-gamma.vercel.app/coffee/${_id}`, {
             method: 'PUT',
             headers: { "content-type": "application/json" },
             body: JSON.stringify(updatedCoffee)

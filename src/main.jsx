@@ -18,7 +18,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    loader: () => fetch('http://localhost:5000/coffee')
+    loader: () => fetch('https://coffe-store-server-sooty-gamma.vercel.app/coffee')
   },
   {
     path: "/addcoffee",
@@ -27,7 +27,7 @@ const router = createBrowserRouter([
   {
     path: "/UpdateCoffee/:id",
     element: <UpdateCoffee />,
-    loader: ({ params }) => fetch(`http://localhost:5000/coffee/${params.id}`)
+    loader: ({ params }) => fetch(`https://coffe-store-server-sooty-gamma.vercel.app/coffee/${params.id}`)
   },
   {
     path: "/login",
@@ -40,7 +40,7 @@ const router = createBrowserRouter([
   {
     path: "/users",
     element: <Users />,
-    loader: () => fetch("http://localhost:5000/user")
+    loader: () => fetch("https://coffe-store-server-sooty-gamma.vercel.app/user")
   },
 
 ]);

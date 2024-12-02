@@ -23,7 +23,7 @@ const Users = () => {
 
 
                 // Delete operation
-                const res = await fetch(`http://localhost:5000/user/${_id}`,
+                const res = await fetch(`https://coffe-store-server-sooty-gamma.vercel.app/user/${_id}`,
                     { method: "DELETE" }
                 )
                 const data = await res.json()

@@ -24,7 +24,7 @@ const LogIn = () => {
                 const lastSignInTime = result?.user?.metadata?.lastSignInTime;
                 const loginInfo = { email, lastSignInTime }
 
-                const res = await fetch("http://localhost:5000/user", {
+                const res = await fetch("https://coffe-store-server-sooty-gamma.vercel.app/user", {
                     method: "PATCH",
                     headers: { "content-type": "application/json" },
                     body: JSON.stringify(loginInfo)

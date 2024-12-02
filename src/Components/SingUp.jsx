@@ -24,7 +24,7 @@ const SingUp = () => {
                 const newUser = { name, email, createdAt }
 
                 // Save the user info to the database
-                const res = await fetch("http://localhost:5000/user", {
+                const res = await fetch("https://coffe-store-server-sooty-gamma.vercel.app/user", {
                     method: "POST",
                     headers: { "content-type": "application/json" },
                     body: JSON.stringify(newUser)

@@ -19,7 +19,7 @@ const AddCoffee = () => {
         console.log(formData)
         // e.target.reset()
         // Send data to server
-        const res = await fetch('http://localhost:5000/coffee', {
+        const res = await fetch('https://coffe-store-server-sooty-gamma.vercel.app/coffee', {
             method: 'POST',
             headers: { "content-type": "application/json" },
             body: JSON.stringify(formData)
